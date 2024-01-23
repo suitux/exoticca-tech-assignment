@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: end;
+
+  .tag {
+    margin-bottom: 8px;
+  }
+}

@@ -25,4 +25,11 @@
   &.secondary {
     background-color: rgb(229, 229, 229);
   }
+
+  &.gold {
+    background-color: rgb(248, 212, 71);
+    border: none;
+    padding: 8px 6px;
+    font-size: 16px;
+  }
 }

@@ -6,12 +6,14 @@ import Highlights from '@/components/ProductCard/components/Highlights/Highlight
 import styles from './product-card.module.scss'
 import Tags from '@/components/ProductCard/components/Tags/Tags'
 import Button from '@/components/Button'
+import Prices from '@/components/ProductCard/components/Prices'
 
 interface ProductCardProps {
   tour: Tour
 }
 
 const ProductCard = ({ tour }: ProductCardProps) => {
+  console.log(tour)
   return (
     <article className={styles.root}>
       <Image src={tour.images[0].desktop} width={541} height={272} alt={'Tour image'} className={styles.image} />
@@ -39,6 +41,12 @@ const ProductCard = ({ tour }: ProductCardProps) => {
         </div>
 
         <div className={styles.prices}>
+          <Prices
+            from={tour.priceDetail.oldPriceBeautify}
+            price={tour.priceDetail.fromPriceBeautify}
+            discount={tour.priceDetail.pricingPercentage}
+            perNight={tour.priceDetail.pricePerNight}
+          />
           <Button className={styles.seeTrip}>See Trip</Button>
         </div>
       </div>
