@@ -1,13 +1,12 @@
-import { HTMLAttributes } from 'react'
+import { HTMLAttributes, PropsWithChildren } from 'react'
 import classNames from 'classnames'
+import styles from './button.module.scss'
 
 type ButtonProps = HTMLAttributes<HTMLButtonElement>
 
-const Button = ({ children, className, ...props }: React.PropsWithChildren<ButtonProps>) => {
+const Button = ({ children, className, ...props }: PropsWithChildren<ButtonProps>) => {
   return (
-    <button
-      className={classNames(className, `bg-black text-white px-4 py-[18px] rounded-full hover:bg-gray-600 text-base`)}
-      {...props}>
+    <button className={classNames(className, styles.button)} {...props}>
       {children}
     </button>
   )

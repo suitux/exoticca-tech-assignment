@@ -14,7 +14,7 @@
 
   .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 8px;
     width: 100%;
 
@@ -35,6 +35,14 @@
             display: block;
           }
         }
+      }
+    }
+
+    .prices {
+      display: flex;
+
+      .seeTrip {
+        margin-top: auto;
       }
     }
   }

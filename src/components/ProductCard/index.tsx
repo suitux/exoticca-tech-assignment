@@ -5,6 +5,7 @@ import Amenities from '@/components/ProductCard/components/Ammenities/Amenities'
 import Highlights from '@/components/ProductCard/components/Highlights/Highlights'
 import styles from './product-card.module.scss'
 import Tags from '@/components/ProductCard/components/Tags/Tags'
+import Button from '@/components/Button'
 
 interface ProductCardProps {
   tour: Tour
@@ -16,13 +17,15 @@ const ProductCard = ({ tour }: ProductCardProps) => {
       <Image src={tour.images[0].desktop} width={541} height={272} alt={'Tour image'} className={styles.image} />
       <div className={styles.content}>
         <div className={styles.info}>
-          <Text size={'sm'}>
-            {tour.destination} in {tour.days} days
-          </Text>
+          <div>
+            <Text size={'sm'}>
+              {tour.destination} in {tour.days} days +
+            </Text>
 
-          <Text size={'lg'} block>
-            {tour.title}
-          </Text>
+            <Text size={'lg'} block>
+              {tour.title}
+            </Text>
+          </div>
 
           <div className={styles.highlightsAndAmenities}>
             <Highlights highlights={tour.highlights} />
@@ -34,9 +37,11 @@ const ProductCard = ({ tour }: ProductCardProps) => {
             <Tags tags={tour.tags} />
           </div>
         </div>
-      </div>
 
-      <div></div>
+        <div className={styles.prices}>
+          <Button className={styles.seeTrip}>See Trip</Button>
+        </div>
+      </div>
     </article>
   )
 }
