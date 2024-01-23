@@ -25,7 +25,9 @@ const ProductCard = ({ tour }: ProductCardProps) => {
 
           <div className={styles.highlightsAndAmenities}>
             <Highlights highlights={tour.highlights} />
-            <Amenities amenities={tour.includes} />
+            <div className={styles.amenities}>
+              <Amenities amenities={tour.includes} />
+            </div>
           </div>
         </div>
       </div>
