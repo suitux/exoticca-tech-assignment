@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={classNames(inter.className, styles.root)}>
+      <body className={classNames(inter.className, styles.root)} suppressHydrationWarning={true}>
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
     </html>
