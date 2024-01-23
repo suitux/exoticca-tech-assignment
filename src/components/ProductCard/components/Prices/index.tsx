@@ -14,19 +14,21 @@ const Prices = ({ price, perNight, from, discount }: PricesProps) => {
     <div className={styles.root}>
       <Tag title={`-${discount}%`} type={'gold'} className={styles.tag} />
 
-      <Text size={'xs'} color={'grey'}>
-        From{' '}
-        <Text size={'xs'} color={'grey'} lineThrough>
-          {from}
+      <div className={styles.prices}>
+        <Text size={'xs'} color={'grey'}>
+          From{' '}
+          <Text size={'xs'} color={'grey'} lineThrough>
+            {from}
+          </Text>
         </Text>
-      </Text>
 
-      <Text size={'xl'} bold>
-        {price}
-      </Text>
-      <Text size={'xs'} color={'grey'}>
-        Per night: {perNight}
-      </Text>
+        <Text size={'xl'} bold>
+          {price}
+        </Text>
+        <Text size={'xs'} color={'grey'}>
+          Per night: {perNight}
+        </Text>
+      </div>
     </div>
   )
 }

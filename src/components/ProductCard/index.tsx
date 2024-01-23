@@ -26,6 +26,14 @@ const ProductCard = ({ tour }: ProductCardProps) => {
       </div>
       <div className={styles.content}>
         <div className={styles.info}>
+          <div className={styles.titlePrices}>
+            <Prices
+              from={tour.priceDetail.oldPriceBeautify}
+              price={tour.priceDetail.fromPriceBeautify}
+              discount={tour.priceDetail.pricingPercentage}
+              perNight={tour.priceDetail.pricePerNight}
+            />
+          </div>
           <div>
             <Text size={'sm'}>
               {tour.destination} in {tour.days} days +
@@ -48,12 +56,14 @@ const ProductCard = ({ tour }: ProductCardProps) => {
         </div>
 
         <div className={styles.prices}>
-          <Prices
-            from={tour.priceDetail.oldPriceBeautify}
-            price={tour.priceDetail.fromPriceBeautify}
-            discount={tour.priceDetail.pricingPercentage}
-            perNight={tour.priceDetail.pricePerNight}
-          />
+          <div className={styles.values}>
+            <Prices
+              from={tour.priceDetail.oldPriceBeautify}
+              price={tour.priceDetail.fromPriceBeautify}
+              discount={tour.priceDetail.pricingPercentage}
+              perNight={tour.priceDetail.pricePerNight}
+            />
+          </div>
           <Button className={styles.seeTrip}>See Trip</Button>
         </div>
       </div>

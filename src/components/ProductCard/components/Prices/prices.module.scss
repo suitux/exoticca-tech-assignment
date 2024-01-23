@@ -1,8 +1,27 @@
+@import 'src/styles/mediaQueries';
+
 .root {
   display: flex;
-  flex-direction: column;
-  text-align: right;
-  align-items: end;
+  align-items: center;
+  gap: 12px;
+
+  @include small {
+    align-items: end;
+    flex-direction: column;
+    text-align: right;
+    gap: 0;
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: start;
+
+    @include small {
+      align-items: end;
+    }
+  }
 
   .tag {
     margin-bottom: 8px;
