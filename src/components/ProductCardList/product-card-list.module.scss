@@ -1,0 +1,13 @@
+.root {
+  width: 100%;
+
+  .searchBar {
+    margin: 0 auto;
+  }
+
+  .tours {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
