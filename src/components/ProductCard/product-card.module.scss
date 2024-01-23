@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  gap: 8px;
+  border: 2.5px solid rgb(229, 229, 229);
+  border-radius: 24px;
+  max-width: 1028px;
+
+  .image {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 100%;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .highlightsAndAmenities {
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+      }
+    }
+  }
+}

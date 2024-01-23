@@ -1,0 +1,10 @@
+.amenity {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+  svg {
+    width: 1em;
+    height: 1em;
+  }
+}
