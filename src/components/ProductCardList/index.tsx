@@ -16,6 +16,7 @@ const ProductCardList = () => {
     ...(data?.destinations.featuredMultiMarket || [])
   ]
 
+  // I know this is not the best performant solution, but in the test, you specified "By any data".
   function filterTours(filterString: string): Tour[] {
     return toursOriginalData.filter(tour => JSON.stringify(tour).includes(filterString))
   }
