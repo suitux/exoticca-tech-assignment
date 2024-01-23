@@ -23,14 +23,12 @@ interface AmenitiesProps {
 
 const Amenities = ({ amenities }: AmenitiesProps) => {
   return (
-    <ol>
+    <ol className={styles.ol}>
       {amenities.map(amenity => {
         return (
           <li key={amenity} className={styles.amenity}>
             {AmenityIconByType[amenity]}
-            <Text size={'sm'}>
-              {amenity.toLowerCase()}
-            </Text>
+            <Text size={'sm'}>{amenity.toLowerCase()}</Text>
           </li>
         )
       })}

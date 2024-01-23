@@ -52,6 +52,12 @@
       flex-direction: column;
       gap: 16px;
 
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
       .titlePrices {
         display: block;
         @include small {

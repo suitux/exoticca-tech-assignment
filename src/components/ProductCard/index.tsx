@@ -34,7 +34,7 @@ const ProductCard = ({ tour }: ProductCardProps) => {
               perNight={tour.priceDetail.pricePerNight}
             />
           </div>
-          <div>
+          <div className={styles.title}>
             <Text size={'sm'}>
               {tour.destination} in {tour.days} days +
             </Text>
