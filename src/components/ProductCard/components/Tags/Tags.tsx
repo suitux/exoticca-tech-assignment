@@ -19,7 +19,7 @@ interface AmenitiesProps {
 const Tags = ({ tags }: AmenitiesProps) => {
   return (
     <div className={styles.root}>
-      <Tag title={'GROUP TOURS'} />
+      <Tag title={'GROUP TOURS'} fontSize={'xs'} />
 
       {tags.map(tag => {
         return (
@@ -28,6 +28,7 @@ const Tags = ({ tags }: AmenitiesProps) => {
             title={tag.name}
             icon={TagIconByType[tag.alias as TagTypes]}
             type={TagPrimaries.includes(tag.alias) ? 'primary' : 'secondary'}
+            fontSize={'xs'}
           />
         )
       })}

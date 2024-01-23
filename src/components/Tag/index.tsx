@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import classNames from 'classnames'
 import styles from './tag.module.scss'
-import Text from '@/components/Text'
+import Text, { TextSizeTypes } from '@/components/Text'
 
 type TagStyleType = 'primary' | 'secondary' | 'gold'
 
@@ -10,13 +10,14 @@ interface TagProps {
   icon?: ReactNode
   type?: TagStyleType
   className?: string
+  fontSize?: TextSizeTypes
 }
 
-const Tag = ({ title, icon, type = 'primary', className }: TagProps) => {
+const Tag = ({ title, icon, type = 'primary', fontSize = 'sm', className }: TagProps) => {
   return (
     <div className={classNames(styles.tag, styles[type], className)}>
       {icon}
-      <Text size={'sm'}>{title}</Text>
+      <Text size={fontSize}>{title}</Text>
     </div>
   )
 }

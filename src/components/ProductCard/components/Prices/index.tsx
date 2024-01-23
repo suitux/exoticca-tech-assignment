@@ -12,16 +12,19 @@ interface PricesProps {
 const Prices = ({ price, perNight, from, discount }: PricesProps) => {
   return (
     <div className={styles.root}>
-      <Tag title={`-${discount}%`} type={'gold'} className={styles.tag}/>
+      <Tag title={`-${discount}%`} type={'gold'} className={styles.tag} />
 
-      <Text size={'sm'} color={'grey'}>
-        From {from}
+      <Text size={'xs'} color={'grey'}>
+        From{' '}
+        <Text size={'xs'} color={'grey'} lineThrough>
+          {from}
+        </Text>
       </Text>
 
       <Text size={'xl'} bold>
         {price}
       </Text>
-      <Text size={'sm'} color={'grey'}>
+      <Text size={'xs'} color={'grey'}>
         Per night: {perNight}
       </Text>
     </div>

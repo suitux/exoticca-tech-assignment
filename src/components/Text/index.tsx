@@ -1,9 +1,10 @@
 import { HTMLAttributes } from 'react'
 import classNames from 'classnames'
 
-type TextSizeTypes = 'sm' | 'md' | 'lg' | 'xl'
+export type TextSizeTypes = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
 const TextSizes: { [key in TextSizeTypes]: number } = {
+  xs: 12,
   sm: 14,
   md: 16,
   lg: 20,
@@ -23,6 +24,7 @@ interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   color?: TextColorTypes
   block?: boolean
   bold?: boolean
+  lineThrough?: boolean
 }
 
 const Text = ({
@@ -32,6 +34,7 @@ const Text = ({
   color = 'primary',
   block,
   bold,
+  lineThrough,
   ...props
 }: React.PropsWithChildren<TextProps>) => {
   return (
@@ -42,6 +45,7 @@ const Text = ({
         color: TextColors[color],
         display: block ? 'block' : 'inline',
         fontWeight: bold ? 'bold' : 'normal',
+        textDecoration: lineThrough ? 'line-through' : 'none',
         ...props.style
       }}>
       {children}
