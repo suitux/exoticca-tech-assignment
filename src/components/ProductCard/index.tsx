@@ -4,6 +4,7 @@ import Text from '@/components/Text'
 import Amenities from '@/components/ProductCard/components/Ammenities/Amenities'
 import Highlights from '@/components/ProductCard/components/Highlights/Highlights'
 import styles from './product-card.module.scss'
+import Tags from '@/components/ProductCard/components/Tags/Tags'
 
 interface ProductCardProps {
   tour: Tour
@@ -28,6 +29,9 @@ const ProductCard = ({ tour }: ProductCardProps) => {
             <div className={styles.amenities}>
               <Amenities amenities={tour.includes} />
             </div>
+          </div>
+          <div>
+            <Tags tags={tour.tags} />
           </div>
         </div>
       </div>

@@ -1,0 +1,28 @@
+.tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 4px;
+  padding: 0 8px;
+  height: 24px;
+  border: 1.5px solid rgb(202, 202, 202);
+  border-radius: 100px;
+  pointer-events: none;
+  white-space: nowrap;
+  cursor: pointer;
+
+  svg {
+    width: 1em;
+    height: 1em;
+  }
+
+  &.primary {
+    text-transform: uppercase;
+    background-color: transparent;
+  }
+
+  &.secondary {
+    background-color: rgb(229, 229, 229);
+  }
+}

@@ -161,7 +161,7 @@ interface PriceDetail {
   oldPrice: number
 }
 
-interface Tag {
+export interface Tag {
   alias: string
   name: string
   description: string
