@@ -4,6 +4,7 @@ import './globals.css'
 import React from 'react'
 import ReactQueryProvider from '@/providers/ReactQuery'
 import classNames from 'classnames'
+import styles from './layout.module.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={classNames(inter.className, styles.root)}>
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
     </html>
