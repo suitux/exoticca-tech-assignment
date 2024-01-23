@@ -1,5 +1,4 @@
 import { Tour } from '@/model'
-import Image from 'next/image'
 import Text from '@/components/Text'
 import Amenities from '@/components/ProductCard/components/Ammenities/Amenities'
 import Highlights from '@/components/ProductCard/components/Highlights/Highlights'
@@ -7,16 +6,24 @@ import styles from './product-card.module.scss'
 import Tags from '@/components/ProductCard/components/Tags/Tags'
 import Button from '@/components/Button'
 import Prices from '@/components/ProductCard/components/Prices'
+import Image from 'next/image'
 
 interface ProductCardProps {
   tour: Tour
 }
 
 const ProductCard = ({ tour }: ProductCardProps) => {
-  console.log(tour)
   return (
     <article className={styles.root}>
-      <Image src={tour.images[0].desktop} width={541} height={272} alt={'Tour image'} className={styles.image} />
+      <div className={styles.image}>
+        <Image
+          src={tour.images[0].desktop}
+          layout={'fill'}
+          alt={'Tour image'}
+          style={{ objectFit: 'cover' }}
+          className={styles.image}
+        />
+      </div>
       <div className={styles.content}>
         <div className={styles.info}>
           <div>
