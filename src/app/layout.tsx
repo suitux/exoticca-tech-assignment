@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={classNames(inter.className, 'container mx-auto')}>
+      <body className={inter.className}>
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
     </html>
