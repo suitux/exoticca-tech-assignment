@@ -8,6 +8,10 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   test: {
-    environment: 'jsdom'
+    environment: 'jsdom',
+    clearMocks: true,
+    restoreMocks: true,
+    mockReset: true,
+    globals: true
   }
 })

@@ -13,7 +13,7 @@ const Highlights = ({ highlights }: HighlightsProps) => {
   const hasMoreHighLights = highlights.length > HIGHLIGHT_MAX
 
   return (
-    <ol>
+    <ol className={styles.ol}>
       {highlights.slice(0, HIGHLIGHT_MAX).map(highLight => {
         return (
           <li key={highLight.title} className={styles.highlight}>

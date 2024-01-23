@@ -1,6 +1,6 @@
 import { describe, expect, test, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import SearchBar from '@/components/SearchBar/index'
+import SearchBar from '@/components/SearchBar'
 
 describe('SearchBar tests', () => {
   test('It should call to onChange function when we change the input', () => {
