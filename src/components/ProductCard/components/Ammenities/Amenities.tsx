@@ -28,7 +28,7 @@ const Amenities = ({ amenities }: AmenitiesProps) => {
         return (
           <li key={amenity} className={styles.amenity}>
             {AmenityIconByType[amenity]}
-            <Text size={'sm'} style={{ color: 'red' }}>
+            <Text size={'sm'}>
               {amenity.toLowerCase()}
             </Text>
           </li>
