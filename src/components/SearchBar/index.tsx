@@ -9,7 +9,7 @@ interface SearchBarProps {
 const SearchBar = ({ onSearch, className }: SearchBarProps) => {
   return (
     <div className={classNames(styles.root, className)}>
-      <input type={'text'} placeholder={'Search...'} onChange={e => onSearch(e.target.value)} />
+      <input data-testid={'searchbar-input'} type={'text'} placeholder={'Search...'} onChange={e => onSearch(e.target.value)} />
     </div>
   )
 }
