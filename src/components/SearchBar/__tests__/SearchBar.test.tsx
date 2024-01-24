@@ -16,4 +16,20 @@ describe('SearchBar tests', () => {
 
     expect(onSearchMocked).toHaveBeenCalled()
   })
+
+  test('It should call to onSearchClick function when we change the input and click to search', () => {
+    const onSearchClickMocked = vi.fn()
+
+    render(<SearchBar onSearchClick={onSearchClickMocked} />)
+
+    fireEvent.change(screen.getByTestId('searchbar-input'), {
+      target: {
+        value: 'test'
+      }
+    })
+
+    fireEvent.click(screen.getByText('Search'))
+
+    expect(onSearchClickMocked).toHaveBeenCalled()
+  })
 })
