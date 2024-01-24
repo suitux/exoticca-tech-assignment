@@ -612,7 +612,7 @@
   resolved "https://registry.yarnpkg.com/@tanstack/query-devtools/-/query-devtools-5.17.21.tgz#76f2b3edea24fd2a61d541bc3fd252a168af20b0"
   integrity sha512-WWfcnNjTEqcuAS5GyKkVGkseuES6yd197MJWGImBu+MoCjWPqxSXKCCfm+utSXJauJUGm7xoMmhqCphiQdjf8w==
 
-"@tanstack/react-query-devtools@^5.17.21":
+"@tanstack/react-query-devtools@5.17.21":
   version "5.17.21"
   resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-5.17.21.tgz#88a01eb5a76065588262d52be18b3c429202b4f2"
   integrity sha512-Ri1AuWpN67eyPdMTlPxx1TMGNUaxTHrGv0ll0S20ZObz/Xms5wfANV3c6OX0HZTY0igudP1k5jpRLXNkd249mg==
@@ -640,7 +640,7 @@
     lz-string "^1.5.0"
     pretty-format "^27.0.2"
 
-"@testing-library/react@^14.1.2":
+"@testing-library/react@14.1.2":
   version "14.1.2"
   resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-14.1.2.tgz#a2b9e9ee87721ec9ed2d7cfc51cc04e474537c32"
   integrity sha512-z4p7DVBTPjKM5qDZ0t5ZjzkpSNb+fZy1u6bzO7kk8oeGagpPCAtgh4cx1syrfp7a+QWkM021jGqjJaxJJnXAZg==
@@ -781,7 +781,7 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vitejs/plugin-react@^4.2.1":
+"@vitejs/plugin-react@4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-4.2.1.tgz#744d8e4fcb120fc3dbaa471dadd3483f5a304bb9"
   integrity sha512-oojO9IDc4nCUUi8qIR11KoQm0XFFLIwsRBwHRR4d/88IWghn1y6ckz/bJ8GHDCsYEJee8mDzqtJxh15/cisJNQ==
@@ -1172,7 +1172,7 @@ check-error@^1.0.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-classnames@^2.5.1:
+classnames@2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
   integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
@@ -2396,7 +2396,7 @@ js-yaml@^4.1.0:
   dependencies:
     argparse "^2.0.1"
 
-jsdom@^24.0.0:
+jsdom@24.0.0:
   version "24.0.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-24.0.0.tgz#e2dc04e4c79da368481659818ee2b0cd7c39007c"
   integrity sha512-UDS2NayCvmXSXVP6mpTj+73JnNQadZlr9N68189xib2tx5Mls7swlTNao26IoHv46BZJFvXygyRtyXd1feAk1A==
@@ -2911,7 +2911,7 @@ postcss@8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@^8.4.32, postcss@^8.4.33:
+postcss@8.4.33, postcss@^8.4.32:
   version "8.4.33"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.33.tgz#1378e859c9f69bf6f638b990a0212f43e2aaa742"
   integrity sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==
@@ -3593,7 +3593,7 @@ vite-node@1.2.1:
     picocolors "^1.0.0"
     vite "^5.0.0"
 
-vite-tsconfig-paths@^4.3.1:
+vite-tsconfig-paths@4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-4.3.1.tgz#28762938151e7c80aec9d70c57e65ddce43a576f"
   integrity sha512-cfgJwcGOsIxXOLU/nELPny2/LUD/lcf1IbfyeKTv2bsupVbTH/xpFtdQlBmIP1GEK2CjjLxYhFfB+QODFAx5aw==
@@ -3613,7 +3613,7 @@ vite@^5.0.0:
   optionalDependencies:
     fsevents "~2.3.3"
 
-vitest@^1.2.1:
+vitest@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/vitest/-/vitest-1.2.1.tgz#9afb705826a2c6260a71b625d28b49117833dce6"
   integrity sha512-TRph8N8rnSDa5M2wKWJCMnztCZS9cDcgVTQ6tsTFTG/odHJ4l5yNVqvbeDJYJRZ6is3uxaEpFs8LL6QM+YFSdA==
