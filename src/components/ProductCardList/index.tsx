@@ -9,7 +9,7 @@ import { Tour } from '@/model'
 import SearchBar from '@/components/SearchBar'
 
 const ProductCardList = () => {
-  const { data } = useProducts()
+  const { data, isLoading } = useProducts()
   const [tours, setTours] = useState<Tour[]>([])
   const toursOriginalData = [
     ...(data?.destinations.multiMarket || []),
@@ -37,8 +37,11 @@ const ProductCardList = () => {
 
       <div>
         <Text block size={'xl'}>
-          tours
+          Tours
         </Text>
+
+        {tours.length === 0 && !isLoading && <Text>No data</Text>}
+        {isLoading && <Text>Loading...</Text>}
 
         <div className={styles.tours}>
           {tours.map(tour => (
