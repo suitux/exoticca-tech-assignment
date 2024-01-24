@@ -35,4 +35,28 @@ describe('ProductCardList tests', () => {
 
     expect(screen.getAllByText(value)).toBeTruthy()
   })
+
+  test('Should render loading when the products are loading', () => {
+    ;(useProducts as Mock).mockReturnValue({ isLoading: true })
+
+    render(<ProductCardList />)
+
+    expect(screen.getByText('Loading...')).toBeTruthy()
+  })
+
+  test('Should render no data when there is no data when filtering', () => {
+    ;(useProducts as Mock).mockReturnValue({ data: useProductsResponseData })
+
+    render(<ProductCardList />)
+
+    act(() => {
+      fireEvent.change(screen.getByTestId('searchbar-input'), {
+        target: {
+          value: 'no-found-value'
+        }
+      })
+    })
+
+    expect(screen.getAllByText('No data')).toBeTruthy()
+  })
 })
