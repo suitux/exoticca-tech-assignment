@@ -5,7 +5,6 @@ This is a project created for the Exoticca test by Xavi Rincon.
 ## Improvements that could have been done but I didn't have the time
 
 - Add i18n for internationalization
-- Do a prettier searchbar (Didn't have any design)
 - Do a better search solution for more optimal results.
 - I only added testing for the functional part of the app, the Searchbar. I don't see the point of testing a component without logic like the button, the tag or the text :)
 
