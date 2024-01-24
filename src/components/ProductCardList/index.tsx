@@ -35,7 +35,7 @@ const ProductCardList = () => {
     <div className={styles.root}>
       <SearchBar onSearch={onSearch} className={styles.searchBar} />
 
-      <div>
+      <div className={styles.products}>
         <Text block size={'xl'}>
           Tours
         </Text>

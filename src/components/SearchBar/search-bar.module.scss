@@ -1,11 +1,33 @@
 .root {
-  width: fit-content;
   display: flex;
   align-items: center;
   gap: 16px;
+  width: 100%;
+  background-color: black;
+  height: 68px;
+  justify-content: center;
 
-  input {
-    border: 2px solid black;
-    height: 40px;
+  .inputContainer {
+    border-radius: 100px;
+    background-color: white;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    input {
+      width: fit-content;
+      height: 40px;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }

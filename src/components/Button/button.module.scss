@@ -1,12 +1,19 @@
 .button {
   background-color: black;
   color: white;
-  padding: 16px 18px;
-  border-radius: 100px;
   white-space: pre;
   height: fit-content;
   width: fit-content;
   border: 1px solid black;
+  border-radius: 100px;
+
+  &.lg {
+    padding: 16px 18px;
+  }
+
+  &.sm {
+    padding: 4px 24px;
+  }
 
   &:hover {
     background-color: rgb(113, 113, 113);
