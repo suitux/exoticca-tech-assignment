@@ -36,10 +36,6 @@ const ProductCardList = () => {
       <SearchBar onSearch={onSearch} className={styles.searchBar} />
 
       <div className={styles.products}>
-        <Text block size={'xl'}>
-          Tours
-        </Text>
-
         {tours.length === 0 && !isLoading && <Text>No data</Text>}
         {isLoading && <Text>Loading...</Text>}
 
