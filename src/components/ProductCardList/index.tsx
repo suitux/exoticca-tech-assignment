@@ -18,7 +18,7 @@ const ProductCardList = () => {
 
   // I know this is not the best performant solution, but in the test, you specified "By any data".
   function filterTours(filterString: string): Tour[] {
-    return toursOriginalData.filter(tour => JSON.stringify(Object.values(tour)).includes(filterString))
+    return toursOriginalData.filter(tour => JSON.stringify(Object.values(tour)).includes(filterString.toLowerCase()))
   }
 
   useEffect(() => {
